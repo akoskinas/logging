@@ -11,7 +11,7 @@ myLoggingSystem::ConsoleSink::ConsoleSink()
 
 void myLoggingSystem::ConsoleSink::logMessage(const std::string& outputMsg)
 {
-    std::cout << "logging to the console the message: " << outputMsg;
+    std::cout << "logging to the console the message: " << outputMsg << std::endl;
 }
 
 void myLoggingSystem::ConsoleSink::Installed()

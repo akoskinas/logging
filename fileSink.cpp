@@ -7,22 +7,22 @@
 // sample implementation for FileSink ctor
 myLoggingSystem::FileSink::FileSink(const std::string& outputPath) : path{outputPath}
 {
-    std::cout << "the output path is " << path << std::endl;
+    std::cout << "FileSink constructor says: the output path is `" << path << "`" << std::endl;
 }
 
 void myLoggingSystem::FileSink::logMessage(const std::string& outputMsg)
 {
-    std::cout << "logging to the file the message:" << outputMsg << std::endl;
+    std::cout << "logging to the file: `" << path << "` the message: " << outputMsg << std::endl;
 }
 
 void myLoggingSystem::FileSink::Installed()
 {
     // do a meaningful check //
-    std::cout << "the FileSink :" << path << "was installed successfully" << std::endl;
+    std::cout << "the FileSink was installed successfully" << std::endl;
     status = SinkStatus::OK;
 }
 
 myLoggingSystem::FileSink::~FileSink()
 {
-    std::cout << "destructor called" << std::endl;
+    std::cout << "destructor for FileSink was called" << std::endl;
 }

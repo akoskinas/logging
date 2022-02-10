@@ -18,7 +18,6 @@ class Sink
 public:
     virtual void logMessage(const std::string& outputMsg)=0;
     virtual void Installed()=0;
-    virtual ~Sink()=0;
 
 protected:
     SinkStatus status{SinkStatus::NotOK};

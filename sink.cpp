@@ -1,5 +1,5 @@
-// this file contains the definitions of the helper functions of the sink class
-// sink class itself doesn't have a definition because it is a virtual function
+// this file contains the definitions of the helper functions of the sink class.
+// sink class itself doesn't have a ctor and dtor because it is a virtual function
 
 // includes
 #include "sink.h"

@@ -14,7 +14,11 @@ public:
     FileSink(const std::string& outputPath);
     virtual void Installed() override;
     
-    // is the destructor needed?
+    //Q1: is the destructor is NOT needed for the rest to work??
+    //Q2: how to deal with include files?? 
+    //Q3: vs studio code and building!
+
+
     ~FileSink();
 private:
     std::string path;
