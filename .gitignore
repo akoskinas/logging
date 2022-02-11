@@ -1,0 +1,7 @@
+# exclude executables
+*.out
+
+# exclude vs code specific files
+*.vscode/*
+
+
